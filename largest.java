@@ -7,44 +7,20 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int a, b, c, big;
-        Scanner scan = new Scanner(System.in);
-        a = scan.nextInt();
-        b = scan.nextInt();
-        c = scan.nextInt();
-        
-        // let a is the largest
-        
-        big = a;
-        
-        if(big<b)
-        {
-            if(b>c)
-            {
-                big = b;
-            }
-            else
-            {
-                big = c;
-            }
-        }
-        else if(big<c)
-        {
-            if(c>b)
-            {
-                big = c;
-            }
-             else
-            {
-                big = b;
-            }
-        }
-        else
-        {
-            big = a;
-        }
-		
-        System.out.print("Largest Number is " +big);
-    }
-
+		int x,y,z;
+		System.out.println("Enter three integers ");
+        Scanner in = new Scanner(System.in);
+ 
+        x = in.nextInt();
+        y = in.nextInt();
+        z = in.nextInt();
+        if ( x > y && x > z )
+         System.out.println("First number is largest.");
+        else if ( y > x && y > z )
+         System.out.println("Second number is largest.");
+        else if ( z > x && z > y )
+         System.out.println("Third number is largest.");
+        else   
+         System.out.println("Entered numbers are not distinct.");
+	}
 }
