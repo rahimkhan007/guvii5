@@ -9,8 +9,6 @@ class Ideone
 	{
 		int a, b, c, big;
         Scanner scan = new Scanner(System.in);
-		
-        System.out.print("Enter Three Numbers : ");
         a = scan.nextInt();
         b = scan.nextInt();
         c = scan.nextInt();
